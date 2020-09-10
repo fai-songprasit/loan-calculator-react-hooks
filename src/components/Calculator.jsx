@@ -8,19 +8,25 @@ const [userValues, setUserValues] = useState({
     years:'',
 });
 
-const handleInputChange = (event) =>
+const handleInputChange = (event) => {
     setUserValues({ 
         ...userValues, 
         [event.target.name]: event.target.value,
         [event.target.interest]: event.target.value,
         [event.target.years]: event.target.value,
     });
+}
+
+const handleSubmitValues = (e) => {
+    e.preventDefault();
+    console.log(userValues);
+};
 
 const Calculator = () => {
    return (
        <div>
             <h1>Loan Calculator</h1>
-        <form>
+        <form onSubmit={handleSubmitValues}>
             <div>
                 <div>
                 <label>Amount:</label>
@@ -52,6 +58,7 @@ const Calculator = () => {
                         pnChange={handleInputChange}
                     />
                 </div>
+                <input type="submit"/>
             </div>
         </form>
         </div>
