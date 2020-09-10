@@ -79,6 +79,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Produce compounded results over fix period of time
 - Form field for regular payments towards investments
 - Form field for personal income for both before and after tax
+- Apply authentication for deployemnt so that information is store and is updatable
 
 ## Aim
 - Turn App into personal income calculator
