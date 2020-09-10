@@ -69,10 +69,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Key Goals
 - Practice using React Hooks instead of Redux and Class based components
-- Create a basic interest calculator
+- Create a basic loan calculator
 - Practice making scalable code
 
-## Future development
+## Future development/additional features
 - Componded interest calculator over a chosen number of years
 - Show interest gained through investments
 - Manual input of tex rates
