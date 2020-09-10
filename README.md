@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -65,4 +65,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
+
+# Key Goals
+- Practice using React Hooks instead of Redux and Class based components
+- Create a basic interest calculator
+- Practice making scalable code
+
+## Future development
+- Componded interest calculator over a chosen number of years
+- Show interest gained through investments
+- Manual input of tex rates
+- Produce compounded results over fix period of time
+- Form field for regular payments towards investments
+- Form field for personal income for both before and after tax
+
+## Aim
+- Turn App into personal income calculator
