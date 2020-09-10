@@ -83,3 +83,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Aim
 - Turn App into personal income calculator
+- Show income vs outgoings and loan amounts for easier long term budgeting
