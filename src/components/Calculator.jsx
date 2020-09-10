@@ -8,6 +8,14 @@ const [userValues, setUserValues] = useState({
     years:'',
 });
 
+const handleInputChange = (event) =>
+    setUserValues({ 
+        ...userValues, 
+        [event.target.name]: event.target.value,
+        [event.target.interest]: event.target.value,
+        [event.target.years]: event.target.value,
+    });
+
 const Calculator = () => {
    return (
        <div>
@@ -21,6 +29,7 @@ const Calculator = () => {
                     name='amount'
                     placeholder='Loan amount'
                     value={userValues.amount}
+                    pnChange={handleInputChange}
                 />
                 </div>
                 <div>
@@ -29,6 +38,18 @@ const Calculator = () => {
                         type='text'
                         name='interest'
                         placeholder='Interest'
+                        value={userValues.interest}
+                        pnChange={handleInputChange}
+                    />
+                </div>
+                <div>
+                    <label>Years:</label>
+                    <input
+                        type='text'
+                        name='years'
+                        placeholder='Loan term'
+                        value={userValues.years}
+                        pnChange={handleInputChange}
                     />
                 </div>
             </div>
