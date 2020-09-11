@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const Calculator = () => {
+
 const [state, setState] = useState()
 
 const [userValues, setUserValues] = useState({
@@ -8,21 +10,26 @@ const [userValues, setUserValues] = useState({
     years:'',
 });
 
-const handleInputChange = (event) => {
+const [results, setResults] = useState({
+    monthlyPayment: '',
+    totalPayment: '',
+    totalInterest: '',
+    isResult: false,
+});
+
+const [error, setError] = useState('');
+
+const handleInputChange = (event) =>
     setUserValues({ 
         ...userValues, 
         [event.target.name]: event.target.value,
-        [event.target.interest]: event.target.value,
-        [event.target.years]: event.target.value,
     });
-}
 
 const handleSubmitValues = (e) => {
     e.preventDefault();
     console.log(userValues);
 };
 
-const Calculator = () => {
    return (
        <div>
             <h1>Loan Calculator</h1>
@@ -58,7 +65,7 @@ const Calculator = () => {
                         pnChange={handleInputChange}
                     />
                 </div>
-                <input type="submit"/>
+            <input type="submit"/>
             </div>
         </form>
         </div>
